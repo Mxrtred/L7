@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DisplayInput from './DisplayInput';
+import Change from './Change';
+import LiveUpdate from './LiveUpdate';
+import Submit from './Submit';
+import ChangeBackgroundColor from './ChangeBackgroundColor';
+import ToggleVisibilityText from './ToggleVisibilityText';
+import ClickCounter from './ClickCounter';
+import AddList from './AddList';
+import Focus from './Focus';
+import ChangeText from './ChangeText';
+import OnOff from './OnOff';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DisplayInput />
+      <Change />
+      <LiveUpdate />
+      <Submit />
+      <ChangeBackgroundColor />
+      <ToggleVisibilityText />
+      <ClickCounter />
+      <AddList />
+      <Focus />
+      <ChangeText />
+      <OnOff />
     </div>
   );
 }
